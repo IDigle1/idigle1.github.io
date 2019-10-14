@@ -1,0 +1,51 @@
+.content {
+    width: 1000px;
+    margin-left: calc(50% - 500px);
+}
+table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+thead tr th {
+    padding: 0 30px;
+}
+
+tbody tr td {
+    padding: 15px;
+}
+
+tbody tr td:first-child {
+    padding-right: 150px;
+}
+
+.container-info .image,
+.container-info .info {
+    padding: 10px;
+    display: inline-block;
+}
+
+.container-info .image img {
+    max-width: 100px;
+}
+.form {
+    width: 100%;
+}
+.form .phone-number-wrap,
+.form .name-wrap {
+    margin: 20px;
+    width: 45%;
+    display: inline-block;
+}
+.form input {
+    padding: 5px;
+    width: 100%;
+}
+.about-me h2 {
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+.about-me .text.hidden {
+    display: none;
+}
