@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .content {
+            width: 1000px;
+            margin-left: calc(50% - 500px);
+        }
+        table {
+            width: 100%;
+            border-spacing: 0;
+        }
+
+        thead tr th {
+            padding: 0 30px;
+        }
+
+        tbody tr td {
+            padding: 15px;
+        }
+
+        tbody tr td:first-child {
+            padding-right: 150px;
+        }
+
+        .container-info .image,
+        .container-info .info {
+            padding: 10px;
+            display: inline-block;
+        }
+
+        .container-info .image img {
+            max-width: 100px;
+        }
+        .form {
+            width: 100%;
+        }
+        .form .phone-number-wrap,
+        .form .name-wrap {
+            margin: 20px;
+            width: 45%;
+            display: inline-block;
+        }
+        .form input {
+            padding: 5px;
+            width: 100%;
+        }
+        .about-me h2 {
+            text-align: center;
+            cursor: pointer;
+            user-select: none;
+        }
+        .about-me .text.hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="container-info">
+            <div class="image">
+                <img src="https://sun9-70.userapi.com/c637917/v637917947/11d89/_70NktmevtA.jpg" alt="">
+            </div>
+            <div class="info">
+                <h1>Евгений Фалалеев</h1>
+                <p><b>Адрес:</b> Челябинск</p>
+                <p><b>Опыт работы:</b> 1 год</p>
+                <p><b>Телефон:</b> +7 (908) 054-13-69</p>
+            </div>
+        </div>
+        <h2>Знание языков</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <td></td>
+                    <th>Java</th>
+                    <th>JavaScript</th>
+                    <th>C++</th>
+                    <th>C#</th>
+                    <th>Swift</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Отличное владение</td>
+                    <td>Нет</td>
+                    <td>Нет</td>
+                    <td>Нет</td>
+                    <td>Нет</td>
+                    <td>Нет</td>
+                </tr>
+                <tr>
+                    <td>Хорошее владение</td>
+                    <td>Нет</td>
+                    <td>Да</td>
+                    <td>Нет</td>
+                    <td>Нет</td>
+                    <td>Нет</td>
+                </tr>
+                <tr>
+                    <td>Среднее владение</td>
+                    <td>Нет</td>
+                    <td>Да</td>
+                    <td>Нет</td>
+                    <td>Нет</td>
+                    <td>Нет</td>
+                </tr>
+                <tr>
+                    <td>Плохое владение</td>
+                    <td>Нет</td>
+                    <td>Да</td>
+                    <td>Нет</td>
+                    <td>Нет</td>
+                    <td>Нет</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="form">
+            <div class="phone-number-wrap">
+                <label>
+                    <p>Телефон:</p>
+                    <input type="text" placeholder="+7 (999) 999 99 99" value="+7 (908) 054-13-69">
+                </label>
+            </div>
+            <div class="name-wrap">
+                <label>
+                    <p>Имя:</p>
+                    <input type="text" placeholder="Джеффри" value="Евгений">
+                </label>
+            </div>
+        </div>
+        <div class="about-me">
+            <h2>Кликните сюда чтобы узнать меня подробнее</h2>
+            <p class="text hidden">Меня зовут Евгений, мне 24, родился и вырос в городе Челябинск. С детства увлекался компьютерными играми, 
+                    а в последствии заинтересовался самими компьютерами. В 14 лет первый раз разобрал и удачно собрал свой настольный компьютер. 
+                в 16 лет в школе на уроке информатике узнал что такое HTML и CSS. Попробовав дома стал понемногу изучает эту технологию и увлекся. 
+                В будущем услышал и о существовании JavaScript, поиграв с ним понял что мне нравится программирование и я хочу заниматься этим профессионально.
+                Позже я углубился в Web разработку еще больше, узнав о серверных технологиях, таких как php, node.js. Огромные списки различных фремворков и библиотек не пугали меня,
+                а наоборот мотивировали.
+                Так начинается моё путешествие к цели - стать одним из лучших в Web разработке.</p>
+        </div>
+    </div>
+    <script>
+        const aboutMeheader = document.querySelector('.about-me');
+        const text = document.querySelector('.about-me .text');
+
+        aboutMeheader.addEventListener('click', function() {
+            text.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
