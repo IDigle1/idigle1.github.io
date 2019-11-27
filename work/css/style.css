@@ -32,6 +32,36 @@ h2 {
     position: relative;
     width: 100%;
 }
+#owl-nav {
+    padding: 30px 15px;
+}
+#owl-nav button {
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    background: none;
+    border: 1px solid #CECECE;
+    outline: none;
+}
+#owl-nav button:hover {
+    background: #FD634E;
+    border-color: #FD634E;
+    color: #fff;
+}
+
+.views-item.buisiness .buisiness-card {
+    padding: 70px 40px 60px 40px;
+    margin: 0 15px;
+    background: #F3F5F9;
+}
+.views-item.buisiness .buisiness-card img {
+    max-width: 50px;
+    margin-bottom: 25px;
+}
+.views-item.buisiness .buisiness-card h3{
+    font-size: 18px;
+    line-height: 22px;
+}
 .views-item.costs {
     background: #333991;
     color: #fff;
