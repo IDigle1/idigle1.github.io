@@ -1,0 +1,131 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+p {
+    font-size: 18px;
+    line-height: 28px;
+}
+p.small-text {
+    font-size: 14px;
+    line-height: 24px;
+    opacity: 0.9;
+}
+h2 {
+    font-size: 40px;
+    line-height: 50px;
+}
+.container-fluid {
+    padding: 0 50px;
+    min-height: 10vh;
+}
+.views-item {
+    margin-bottom: 0;
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 94px;
+}
+.maxwidththeme {
+    margin-left: auto!important;
+    margin-right: auto!important;
+    padding: 0 16px;
+    max-width: 1344px;
+    position: relative;
+    width: 100%;
+}
+.views-item.costs {
+    background: #333991;
+    color: #fff;
+    
+}
+.views-item .nav-tabs-row {
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.views-item.we-do-work .nav-tabs-row {
+    border-bottom: 1px solid #E4E4E4;
+}
+.views-item .nav-tabs {
+    border-bottom: 0;
+}
+.nav-tabs.costs .nav-link,
+.nav-tabs.costs .nav-link.active {
+    background: none;
+    color: inherit;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    padding: 10px 0;
+}
+.nav-tabs.costs .nav-link:hover {
+    border-color: rgba(0,0,0,0);
+}
+.nav-tabs.costs .tab-pane .small-text {
+    
+}
+.nav-tabs.costs .nav-link.active,
+.nav-tabs.costs .nav-link.active:hover {
+    border-bottom: 2px solid #FD634E;
+}
+.nav-tabs.costs .nav-item {
+    margin-left: 40px;
+} 
+.nav-tabs.costs .nav-item:first-child {
+    margin-left: 0;
+} 
+
+.views-item.how-it-works h3 {
+    font-size: 18px;
+    line-height: 22px;
+    color: #333;
+}
+
+.views-item.how-it-works p {
+    font-size: 14px;
+    line-height: 27px;
+    color: #777;
+}
+
+.views-item.how-it-works .stats {
+    width: 100%;
+    background: #F3F5F9;
+}
+
+.views-item.we-do-work {
+    background: #F3F5F9;
+    color: #555;
+}
+
+.views-item.result ul {
+    list-style: none;
+    padding: 0;
+}
+.views-item.result ul li {
+    padding: 14px 0;
+}
+.views-item.result ul li span {
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+.views-item.what-we-do {
+    background: #F3F5F9;
+    color: #555;
+}
+
+.views-item.what-we-do .card {
+    padding: 40px;
+}
+
+.views-item.what-we-do .card h3 {
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.views-item.what-we-do .card p {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+footer {
+    background: #2F3338;
+    min-height: 10vh;
+}
