@@ -8,7 +8,7 @@ p {
 p.small-text {
     font-size: 14px;
     line-height: 24px;
-    opacity: 0.9;
+    color: #555;
 }
 h2 {
     color: #333;
@@ -28,8 +28,8 @@ h2 {
 .views-item {
     margin-bottom: 0;
     position: relative;
-    padding-top: 90px;
-    padding-bottom: 94px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 .maxwidththeme {
     margin-left: auto!important;
@@ -76,6 +76,7 @@ h2 {
     font-size: 18px;
     line-height: 22px;
     margin: 10px 0;
+    color: #333;
 }
 .views-item.buisiness .buisiness-card p {
     line-height: 25px;
