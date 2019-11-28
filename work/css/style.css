@@ -18,6 +18,8 @@ h2 {
 .views-item.dark .block-description-text {
     color: #555;
 }
+.views-item.light h3,
+.views-item.light p,
 .views-item.light h2 {
     color: #fff;
 }
@@ -63,10 +65,38 @@ h2 {
 #owl-nav button:hover .svg-next {
     fill: #fff;
 }
+.views-item.big-banner {
+    padding: 70px 30px 60px 40px;
+    margin: 0 15px;
+    background: #333991;
+    padding-bottom: 0;
+}
+.views-item.big-banner h2 {
+    font-size: 50px;
+    line-height: 55px;
+    margin-bottom: 35px;
+    margin-top: 93px;
+}
+.views-item.big-banner p{
+    margin-top: 35px;
+    margin-bottom: 52px;
+}
+.views-item.big-banner button {
+    padding: 12px 30px;
+    color: #fff;
+    background: #FB6053;
+    border: 0;
+    border-radius: 100px;
+}
 .views-item.buisiness .buisiness-card {
     padding: 70px 30px 60px 40px;
     margin: 0 15px;
     background: #F3F5F9;
+}
+.icon-polygon {
+    position: relative;
+    bottom: 2px;
+    margin-right: 9px;
 }
 .views-item.buisiness .buisiness-card img {
     max-width: 50px;
