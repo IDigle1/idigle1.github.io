@@ -11,8 +11,15 @@ p.small-text {
     opacity: 0.9;
 }
 h2 {
+    color: #333;
     font-size: 40px;
     line-height: 50px;
+}
+.views-item.dark .block-description-text {
+    color: #555;
+}
+.views-item.light h2 {
+    color: #fff;
 }
 .container-fluid {
     padding: 0 50px;
@@ -42,6 +49,10 @@ h2 {
     background: none;
     border: 1px solid #CECECE;
     outline: none;
+}
+#owl-nav button svg {
+    position: relative;
+    bottom: 1px;
 }
 #owl-nav button:hover {
     background: #FD634E;
