@@ -229,7 +229,14 @@ h2 {
     line-height: 22px;
     color: #333;
 }
-
+.views-item.how-it-works .block-header-row  {
+    margin-bottom: 104px;
+}
+.views-item.how-it-works .block-header-row p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #777;
+}
 .views-item.how-it-works p {
     font-size: 14px;
     line-height: 27px;
