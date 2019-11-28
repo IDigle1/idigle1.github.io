@@ -88,6 +88,9 @@ h2 {
     font-size: 18px;
     line-height: 28px;
 }
+.views-item.big-banner p span {
+    font-weight: 300;
+}
 .views-item.big-banner button {
     padding: 12px 30px;
     font-size: 11px;
