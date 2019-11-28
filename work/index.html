@@ -35,7 +35,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    
+
                     <div id="owl-nav">
                     </div>
                     <div id="buisiness-carousel" class="owl-carousel">
@@ -348,13 +348,25 @@
     </div>
     
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/common.js"></script>
     <script>
+        let navButtonArrowPrev = `
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="svg-prev" d="M5.99992 0.999924C6.39045 1.39045 6.39045 2.02361 5.99992 2.41414L3.41409 4.99997H11C11.5523 4.99997 12 5.44769 12 5.99997C12 6.55226 11.5523 6.99997 11 6.99997H3.41418L5.99993 9.58571C6.39045 9.97624 6.39045 10.6094 5.99992 10.9999C5.6094 11.3904 4.97624 11.3904 4.58571 10.9999L0.536896 6.95111C0.0115719 6.42578 0.0115709 5.57406 0.536895 5.04874L4.58571 0.999925C4.97623 0.609401 5.6094 0.6094 5.99992 0.999924Z" fill="#555"/>
+            </svg>
+        `;
+        let navButtonArrowNext = `
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="svg-next" d="M6.00008 0.999924C5.60955 1.39045 5.60955 2.02361 6.00008 2.41414L8.58591 4.99997H1C0.447715 4.99997 0 5.44769 0 5.99997C0 6.55226 0.447715 6.99997 1 6.99997H8.58582L6.00007 9.58571C5.60955 9.97624 5.60955 10.6094 6.00008 10.9999C6.3906 11.3904 7.02376 11.3904 7.41429 10.9999L11.4631 6.95111C11.9884 6.42578 11.9884 5.57406 11.4631 5.04874L7.41429 0.999925C7.02377 0.609401 6.3906 0.6094 6.00008 0.999924Z" fill="#555"/>
+            </svg>
+        `;
         $(document).ready(function(){
             $(".owl-carousel").owlCarousel({
                 autoplay: true,
-                autoplayTimeout: 3000,
+                autoplayTimeout: 55000,
                 navContainer: '#owl-nav',
                 smartSpeed: 1000,
+                navText: [navButtonArrowPrev, navButtonArrowNext],
                 nav: true,
                 items: 4,
                 loop: true

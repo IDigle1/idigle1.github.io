@@ -48,19 +48,27 @@ h2 {
     border-color: #FD634E;
     color: #fff;
 }
-
+#owl-nav button:hover .svg-prev, 
+#owl-nav button:hover .svg-next {
+    fill: #fff;
+}
 .views-item.buisiness .buisiness-card {
-    padding: 70px 40px 60px 40px;
+    padding: 70px 30px 60px 40px;
     margin: 0 15px;
     background: #F3F5F9;
 }
 .views-item.buisiness .buisiness-card img {
     max-width: 50px;
-    margin-bottom: 25px;
+    margin-bottom: 26px;
 }
 .views-item.buisiness .buisiness-card h3{
     font-size: 18px;
     line-height: 22px;
+    margin: 10px 0;
+}
+.views-item.buisiness .buisiness-card p {
+    line-height: 25px;
+    font-size: 14px;
 }
 .views-item.costs {
     background: #333991;
@@ -89,7 +97,7 @@ h2 {
     border-color: rgba(0,0,0,0);
 }
 .nav-tabs.costs .tab-pane .small-text {
-    
+    line-height: 25px;
 }
 .nav-tabs.costs .nav-link.active,
 .nav-tabs.costs .nav-link.active:hover {
