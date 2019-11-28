@@ -69,6 +69,7 @@ h2 {
     padding: 70px 30px 60px 40px;
     margin: 0 15px;
     background: #333991;
+    padding-top: 42px;
     padding-bottom: 0;
 }
 .views-item.big-banner h2 {
@@ -76,17 +77,27 @@ h2 {
     line-height: 55px;
     margin-bottom: 35px;
     margin-top: 93px;
+    margin-left: -3px;
 }
-.views-item.big-banner p{
+.views-item.big-banner .banner-description {
+    padding-left: 25px;
+}
+.views-item.big-banner p {
     margin-top: 35px;
-    margin-bottom: 52px;
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 28px;
 }
 .views-item.big-banner button {
     padding: 12px 30px;
+    font-size: 11px;
+    line-height: 25px;
+    text-transform: uppercase;
     color: #fff;
     background: #FB6053;
     border: 0;
     border-radius: 100px;
+    margin: 0 3px;
 }
 .views-item.buisiness .buisiness-card {
     padding: 70px 30px 60px 40px;
