@@ -67,7 +67,6 @@ h2 {
 }
 .views-item.big-banner {
     padding: 70px 30px 60px 40px;
-    margin: 0 15px;
     background: #333991;
     padding-top: 42px;
     padding-bottom: 0;
@@ -87,6 +86,8 @@ h2 {
     margin-bottom: 40px;
     font-size: 18px;
     line-height: 28px;
+    color: #D4D5E8;
+
 }
 .views-item.big-banner p span {
     font-weight: 300;
