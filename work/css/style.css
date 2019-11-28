@@ -18,6 +18,31 @@ h2 {
     font-size: 40px;
     line-height: 50px;
 }
+.rounded-button  {
+    padding: 12px 30px;
+    font-size: 11px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #fff;
+    background: #FB6053;
+    border: 0;
+    border-radius: 100px;
+}
+.rounded-field {
+    border: 0;
+    text-transform: uppercase;
+    border-radius: 100px;
+    background: rgba(255,255,255,0.5);
+    padding: 12px 30px;
+    font-size: 11px;
+    line-height: 25px;
+    color: #fff;
+}
+.rounded-field::-webkit-input-placeholder {color:#fff;}
+.rounded-field::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+.rounded-field:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+.rounded-field:-ms-input-placeholder      {color:#fff;}
+
 .views-item.dark .block-description-text {
     color: #555;
 }
@@ -95,15 +120,8 @@ h2 {
 .views-item.big-banner p span {
     font-weight: 300;
 }
-.views-item.big-banner button {
-    padding: 12px 30px;
-    font-size: 11px;
-    line-height: 25px;
-    text-transform: uppercase;
-    color: #fff;
-    background: #FB6053;
-    border: 0;
-    border-radius: 100px;
+
+.views-item.big-banner .rounded-button {
     margin: 0 3px;
 }
 .views-item.buisiness .buisiness-card {
@@ -156,6 +174,16 @@ h2 {
 .nav-tabs.costs .nav-link:hover {
     border-color: rgba(0,0,0,0);
 }
+.views-item.costs .subscription {
+    padding-top: 38px;
+}
+.views-item.costs .subscription img {
+    margin-top: 8px;
+}
+.views-item.costs .subscription .rounded-button,
+.views-item.costs .subscription .rounded-field {
+    width: 100%;
+}
 .views-item.light .tab-content {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     
@@ -173,6 +201,11 @@ h2 {
 }
 .nav-tabs.costs .tab-pane .small-text {
     line-height: 25px;
+}
+.views-item.costs .tab-pane .tab-header {
+    font-size: 22px;
+    line-height: 60px;
+    margin: 0;
 }
 .nav-tabs.costs .nav-link.active,
 .nav-tabs.costs .nav-link.active:hover {
