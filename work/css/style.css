@@ -182,6 +182,9 @@ h2 {
 .views-item.costs .subscription img {
     margin-top: 8px;
 }
+.views-item.costs .subscription p {
+    margin-bottom: 11px;
+}
 .views-item.costs .subscription .rounded-button,
 .views-item.costs .subscription .rounded-field {
     width: 100%;
