@@ -223,10 +223,16 @@ h2 {
 .nav-tabs.costs .nav-item:first-child {
     margin-left: 0;
 } 
-
+.views-item.how-it-works .item {
+    margin-bottom: 45px;
+}
+.views-item.how-it-works .item img {
+    margin-bottom: 20px;
+}
 .views-item.how-it-works h3 {
     font-size: 18px;
     line-height: 22px;
+    margin-bottom: 10px;
     color: #333;
 }
 .views-item.how-it-works .block-header-row  {
@@ -236,6 +242,7 @@ h2 {
     font-size: 18px;
     line-height: 28px;
     color: #777;
+    padding-top: 5px;
 }
 .views-item.how-it-works p {
     font-size: 14px;
