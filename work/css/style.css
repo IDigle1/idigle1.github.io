@@ -194,7 +194,7 @@ h2 {
     
 }
 .tab-pane {
-    padding-top: 40px;
+    padding-top: 30px;
     padding-bottom: 80px;
 }
 .tab-pane .percent-cols {
@@ -208,7 +208,7 @@ h2 {
 .nav-tabs.costs .tab-pane .small-text {
     line-height: 25px;
 }
-.views-item.costs .tab-pane .tab-header {
+.views-item .tab-pane .tab-header {
     font-size: 22px;
     line-height: 60px;
     margin: 0;
@@ -228,6 +228,24 @@ h2 {
 }
 .views-item.how-it-works .item img {
     margin-bottom: 20px;
+}
+.views-item.how-it-works .stats {
+    
+    background: #F3F5F9;
+}
+.views-item.how-it-works .stats .stats-header {
+    padding: 45px 40px;
+    border-bottom: 1px solid #fff;
+}
+.views-item.how-it-works .stats .stats-main {
+    padding: 35px 40px;
+    border-bottom: 1px solid #fff;
+}
+.views-item.how-it-works .stats .stats-footer {
+    padding: 35px 40px;
+}
+.views-item.how-it-works .stats .stats-main p {
+    margin-bottom: 0;
 }
 .views-item.how-it-works h3 {
     font-size: 18px;
@@ -260,44 +278,47 @@ h2 {
     color: #555;
 }
 
-.views-item.result ul {
+.views-item .description-list {
     list-style: none;
     padding: 0;
 }
-.views-item.result ul li {
-    padding: 14px 0;
+.views-item .description-list li {
+    font-size: 16px;
+    line-height: 26px;
+    padding: 15px 0;
 }
-.views-item.result ul li span {
+.views-item.we-do-work .description-list li span,
+.views-item.result .description-list li span {
     vertical-align: middle;
     padding-left: 10px;
 }
-.views-item.result .vertical-banner {
+.vertical-banner {
     position: relative;
     background: #333991;
 }
-.views-item.result .vertical-banner img {
+.vertical-banner img {
     float: right;
 }
 .vertical-banner .cloud-wrap {
-    height: 150px;
+    height: 200px;
     position: relative;
 }
 .cloud {
     position: absolute;
-    padding: 5px 30px;
+    padding: 25px 28px 25px 30px;
     display: block;
     background: #fff;
     /* top: 10px; */
     left: 0;
     right: 0px;
-    bottom: 0;
+    bottom: -10px;
     transition: 0.1s opacity;
     margin: 0 60px;
     z-index: 10;
 }
 .cloud.fade-up {
     opacity: 0;
-    bottom: 60px;
+    bottom: 50px;
 }
 .cloud::after {
     content: '';
@@ -316,6 +337,7 @@ h2 {
 .cloud p {
     font-size: 17px;
     line-height: 26px;
+    margin-bottom: 0;
   }
 .views-item.what-we-do {
     background: #F3F5F9;
