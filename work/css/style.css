@@ -271,7 +271,52 @@ h2 {
     vertical-align: middle;
     padding-left: 10px;
 }
-
+.views-item.result .vertical-banner {
+    position: relative;
+    background: #333991;
+}
+.views-item.result .vertical-banner img {
+    float: right;
+}
+.vertical-banner .cloud-wrap {
+    height: 150px;
+    position: relative;
+}
+.cloud {
+    position: absolute;
+    padding: 5px 30px;
+    display: block;
+    background: #fff;
+    /* top: 10px; */
+    left: 0;
+    right: 0px;
+    bottom: 0;
+    transition: 0.1s opacity;
+    margin: 0 60px;
+    z-index: 10;
+}
+.cloud.fade-up {
+    opacity: 0;
+    bottom: 60px;
+}
+.cloud::after {
+    content: '';
+    display: block;
+    background: #fff;
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    
+    margin-right: 22%;
+    transform: rotate(45deg);
+    width: 30px;
+    height: 30px;
+    z-index: 5;
+}
+.cloud p {
+    font-size: 17px;
+    line-height: 26px;
+  }
 .views-item.what-we-do {
     background: #F3F5F9;
     color: #555;
@@ -295,3 +340,4 @@ footer {
     background: #2F3338;
     min-height: 10vh;
 }
+

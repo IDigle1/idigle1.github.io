@@ -359,7 +359,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-9">
+                    <div class="col-md-8">
                         <ul>
                             <li><img src="images/icons/1_2.png" alt=""><span>Аналитика бизнес-процессов отделов и
                                     компании</span></li>
@@ -381,8 +381,19 @@
                                     компании</span></li>
                         </ul>
                     </div>
-                    <div class="col-md-3">
-                        <img src="images/img/2_1.png" alt="">
+                    <div class="col-md-4">
+                        <div class="vertical-banner">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="cloud-wrap">
+                                        <div class="cloud">
+                                            <p>На всех этапах с вами работает персональный менеджер.</p>
+                                        </div>
+                                    </div>
+                                    <img src="images/icons/1_men.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -452,6 +463,12 @@
                 items: 4,
                 loop: true
             });
+            ccloud.startInterval([
+                'Какой то текст',
+                'Еще текст',
+                'Куплю гараж',
+                'Опять какой то текст'
+            ], 3000)
         });
     </script>
 </body>
