@@ -5,7 +5,8 @@ p {
     font-size: 18px;
     line-height: 28px;
 }
-p.small-text {
+p.small-text,
+span.small-text  {
     font-size: 14px;
     line-height: 24px;
     color: #555;
@@ -19,6 +20,7 @@ h2 {
     line-height: 50px;
 }
 .rounded-button  {
+    display: inline;
     padding: 12px 30px;
     font-size: 11px;
     line-height: 25px;
@@ -72,7 +74,8 @@ h2 {
 #owl-nav {
     padding: 30px 15px;
 }
-#owl-nav button {
+#owl-nav button,
+.rounded-arrow-button {
     height: 38px;
     width: 38px;
     border-radius: 50%;
@@ -80,17 +83,19 @@ h2 {
     border: 1px solid #CECECE;
     outline: none;
 }
-#owl-nav button svg {
+#owl-nav button svg,
+.rounded-arrow-button svg {
     position: relative;
     bottom: 1px;
 }
-#owl-nav button:hover {
+#owl-nav button:hover, 
+.rounded-arrow-button:hover {
     background: #FD634E;
     border-color: #FD634E;
     color: #fff;
 }
-#owl-nav button:hover .svg-prev, 
-#owl-nav button:hover .svg-next {
+button:hover .svg-prev, 
+button:hover .svg-next {
     fill: #fff;
 }
 .views-item.big-banner {
@@ -160,6 +165,52 @@ h2 {
 }
 .views-item.we-do-work .nav-tabs-row {
     border-bottom: 1px solid #E4E4E4;
+}
+.views-item.we-do-work .rate-card-caption {
+    color: #777;
+    font-size: 13px;
+    line-height: 20px;
+}
+.views-item.we-do-work .rate-card {
+    background: #fff;
+    padding: 19px 40px 30px 40px;
+}
+.blue-alert {
+    color: #1D2371;
+}
+.red-alert {
+    color: #FC6053;
+}
+.views-item.we-do-work .rate-card hr {
+    margin: 26px 0;
+}
+.views-item.we-do-work .rate-card ul {
+    padding: 0;
+    list-style: none;
+}
+.views-item.we-do-work .rate-card .rate-addition {
+    min-height: 400px;
+}
+.views-item.we-do-work .rate-card li {
+    position: relative;
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.views-item.we-do-work .rate-card li .img-wrap {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+.views-item.we-do-work .rate-card img {
+    float: left;
+    margin-right: 15px;
+}
+.views-item.we-do-work .rate-card .rate-card-price {
+    margin-left: 32px;
+    font-size: 25px;
+    line-height: 60px;
+    vertical-align: middle;
 }
 .views-item .nav-tabs {
     border-bottom: 0;
@@ -254,6 +305,7 @@ h2 {
     color: #333;
 }
 .block-header-row  {
+
     margin-bottom: 104px;
 }
 .views-item.how-it-works .block-header-row p {
@@ -344,20 +396,37 @@ h2 {
     color: #555;
 }
 
+.views-item.what-we-do .block-header {
+    font-size: 25px;
+    line-height: 60px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
 .views-item.what-we-do .card {
     padding: 40px;
+    padding-top: 17px;
 }
 
 .views-item.what-we-do .card h3 {
     font-size: 18px;
     line-height: 60px;
+    margin: 0;
 }
 
 .views-item.what-we-do .card p {
+    margin: 0;
     font-size: 14px;
     line-height: 24px;
 }
 
+.views-item.what-we-do .card .text {
+    min-height: 96px;
+    margin-bottom: 22px;
+}
+.views-item.what-we-do .card .rounded-arrow-button {
+    float: right;
+}
 footer {
     background: #2F3338;
     min-height: 10vh;
