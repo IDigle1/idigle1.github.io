@@ -173,7 +173,7 @@ button:hover .svg-next {
 }
 .views-item.we-do-work .rate-card {
     background: #fff;
-    padding: 30px 40px 30px 40px;
+    padding: 39px 40px 30px 40px;
 }
 .views-item.we-do-work .rate-card-header {
     font-size: 25px;
@@ -200,15 +200,17 @@ button:hover .svg-next {
     font-size: 13px;
     line-height: 20px;
     margin-bottom: 20px;
+    padding-left: 37px;
 }
-.views-item.we-do-work .rate-card li .img-wrap {
+/* .views-item.we-do-work .rate-card li .img-wrap {
     position: absolute;
     top: 0;
     bottom: 0;
-}
+} */
 .views-item.we-do-work .rate-card img {
     float: left;
-    margin-right: 15px;
+    /* margin-right: 15px; */
+    margin-left: -37px;
 }
 .views-item.we-do-work .rate-card .rate-card-price {
     margin-left: 32px;
@@ -249,7 +251,7 @@ button:hover .svg-next {
     
 }
 .tab-pane {
-    padding-top: 30px;
+    padding-top: 60px;
     padding-bottom: 80px;
 }
 .tab-pane .percent-cols {
@@ -265,8 +267,8 @@ button:hover .svg-next {
 }
 .views-item .tab-pane .tab-header {
     font-size: 22px;
-    line-height: 60px;
     margin: 0;
+    margin-bottom: 30px;
 }
 .nav-tabs.costs .nav-link.active,
 .nav-tabs.costs .nav-link.active:hover {
@@ -341,7 +343,10 @@ button:hover .svg-next {
 .views-item .description-list li {
     font-size: 16px;
     line-height: 26px;
-    padding: 15px 0;
+    padding: 15px 0 15px 20px;
+}
+.views-item .description-list li img {
+    margin-left: -20px;
 }
 .views-item.we-do-work .description-list li span,
 .views-item.result .description-list li span {

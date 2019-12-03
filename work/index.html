@@ -300,7 +300,57 @@
                             <div class="stats-main">
                                 <div class="row">
                                     <div class="col-md-4">
-                                        <img src="images/icons/1_9.png" alt="">
+                                        <style>
+                                            svg.progress-bar {
+                                                height: 100%;
+                                                -webkit-transform: rotate(-90deg);
+                                                transform: rotate(-90deg);
+                                                width: 100%;
+                                                background: none;
+                                                overflow: visible;
+                                            }
+
+                                            svg.progress-bar text {
+                                                -webkit-transform: rotate(90deg);
+                                                transform: rotate(90deg);
+                                            }
+
+                                            svg.progress-bar .progress-bar__background {
+                                                fill: none;
+                                                stroke: #fff;
+                                                stroke-width: 2.8;
+                                            }
+
+                                            .progress-bar__progress {
+                                                fill: none;
+                                                stroke: #FC6053;
+                                                stroke: #FC6053;
+                                                stroke-dasharray: 100 100;
+                                                stroke-dashoffset: 100;
+                                                stroke-linecap: round;
+                                                stroke-width: 2.8;
+                                                transition: stroke-dashoffset 1s ease-in-out;
+                                            }
+                                        </style>
+                                        <svg class="progress-bar" id="progress-bar" xmlns="http://www.w3.org/2000/svg"
+                                            data-percent="75" viewBox="-1 -1 34 34">
+                                            <circle cx="16" cy="16" r="15.9155" class="progress-bar__background" />
+                                            <circle cx="16" cy="16" r="15.9155"
+                                                class="progress-bar__progress js-progress-bar" />
+                                            <text x="16" y="-13.5" font-family="Arial" font-size="7"
+                                                text-anchor="middle" fill="#444">
+                                                +0%
+                                            </text>
+                                        </svg>
+                                        <script>
+                                            // var percentageComplete = parseInt($('svg#progress-bar').attr(
+                                            //     'data-percent')) / 100;
+                                            // var strokeDashOffsetValue = 100 - (percentageComplete * 100);
+                                            // var progressBar = $("svg#progress-bar .js-progress-bar");
+                                            // progressBar.css("stroke-dashoffset", strokeDashOffsetValue);
+                                            // $('svg#progress-bar text').text(`+${percentageComplete * 100}%`);
+                                            
+                                        </script>
                                     </div>
                                     <div class="col-md-8">
                                         <p><b>+14%</b>&nbsp;<span>1 из 6 показателей эффективности</span></p>
@@ -460,7 +510,7 @@
                                                             электронной почтой<br><span class="blue-alert">1
                                                                 эл.адрес</span> </span></li>
                                                     <li><img src="images/icons/1_10.svg" alt=""><span>Настройка
-                                                            телефонии Битрикс24 или модуля облачной АТС </span><span
+                                                            телефонии Битрикс24 или модуля облачной АТС </span><br><span
                                                             class="blue-alert">1 номер</span></li>
                                                 </ul>
                                                 <hr>
@@ -475,7 +525,8 @@
                                         <div class="col-md-4">
                                             <div class="rate-card">
                                                 <h3 class="rate-card-header">Оптимум</h3>
-                                                <span class="rate-card-caption small-text">Оптимальные настройки - бордое решение</span>
+                                                <span class="rate-card-caption small-text">Оптимальные настройки -
+                                                    бордое решение</span>
                                                 <hr>
                                                 <ul>
                                                     <li><img src="images/icons/1_10.svg" alt=""><span>Консультация и
@@ -494,17 +545,25 @@
                                                             электронной почтой<br><span class="blue-alert">10
                                                                 эл.адресов</span> </span></li>
                                                     <li><img src="images/icons/1_10.svg" alt=""><span>Настройка
-                                                            телефонии Битрикс24 или модуля облачной АТС </span><span
+                                                            телефонии Битрикс24 или модуля облачной АТС </span><br><span
                                                             class="blue-alert">5 номеров</span></li>
                                                 </ul>
                                                 <hr>
                                                 <div class="rate-addition">
                                                     <ul>
-                                                        <li><img src="images/icons/1_11.svg" alt=""><span>Настройка роботов (триггеров)<br><span class="red-alert">10 эл.адресов</span></span></li>
-                                                        <li><img src="images/icons/1_11.svg" alt=""><span>Подключение и настройка онлайн-чата «Открытые линии»</span></li>
-                                                        <li><img src="images/icons/1_11.svg" alt=""><span>Настройка рассылок через CRM–маркетинг<br><span class="red-alert">10 эл.адресов</span></span></li>
-                                                        <li><img src="images/icons/1_11.svg" alt=""><span>Онлайн-обучение по работе с CRM<br><span class="red-alert">10 эл.адресов</span></span></li>
-                                                        <li><img src="images/icons/1_11.svg" alt=""><span>Написание регламента по работе с CRM для сотрудников</span></li>
+                                                        <li><img src="images/icons/1_11.svg" alt=""><span>Настройка
+                                                                роботов (триггеров)<br><span class="red-alert">10
+                                                                    эл.адресов</span></span></li>
+                                                        <li><img src="images/icons/1_11.svg" alt=""><span>Подключение и
+                                                                настройка онлайн-чата «Открытые линии»</span></li>
+                                                        <li><img src="images/icons/1_11.svg" alt=""><span>Настройка
+                                                                рассылок через CRM–маркетинг<br><span
+                                                                    class="red-alert">10 эл.адресов</span></span></li>
+                                                        <li><img src="images/icons/1_11.svg"
+                                                                alt=""><span>Онлайн-обучение по работе с CRM<br><span
+                                                                    class="red-alert">10 эл.адресов</span></span></li>
+                                                        <li><img src="images/icons/1_11.svg" alt=""><span>Написание
+                                                                регламента по работе с CRM для сотрудников</span></li>
                                                     </ul>
                                                 </div>
                                                 <hr>
@@ -536,19 +595,30 @@
                                                             электронной почтой<br><span class="blue-alert">30
                                                                 эл.адресов</span> </span></li>
                                                     <li><img src="images/icons/1_10.svg" alt=""><span>Настройка
-                                                            телефонии Битрикс24 или модуля облачной АТС </span><span
-                                                            class="blue-alert">20 номеров</span></li>
+                                                            телефонии Битрикс24 или модуля облачной АТС <br><span
+                                                                class="blue-alert">20 номеров</span></span></li>
                                                 </ul>
                                                 <hr>
                                                 <div class="rate-addition">
                                                     <ul>
-                                                        <li><img src="images/icons/1_11.svg" alt=""><span>Настройка роботов (триггеров)<br><span class="red-alert">10 эл.адресов</span></span></li>
-                                                        <li><img src="images/icons/1_11.svg" alt=""><span>Подключение и настройка онлайн-чата «Открытые линии»</span></li>
-                                                        <li><img src="images/icons/1_11.svg" alt=""><span>Настройка рассылок через CRM–маркетинг<br><span class="red-alert">10 эл.адресов</span></span></li>
-                                                        <li><img src="images/icons/1_11.svg" alt=""><span>Онлайн-обучение по работе с CRM<br><span class="red-alert">10 эл.адресов</span></span></li>
-                                                        <li><img src="images/icons/1_11.svg" alt=""><span>Написание регламента по работе с CRM для сотрудников</span></li>
-                                                        <li><img src="images/icons/1_11.svg" alt=""><span>Настройка линейных бизнес-процессов<br><span class="red-alert">10 эл.адресов</span></span></li>
-                                                        <li><img src="images/icons/1_11.svg" alt=""><span>Базовая интеграция с 1С (сделки, клиенты, счета)</span></li>
+                                                        <li><img src="images/icons/1_11.svg" alt=""><span>Настройка
+                                                                роботов (триггеров)<br><span class="red-alert">10
+                                                                    эл.адресов</span></span></li>
+                                                        <li><img src="images/icons/1_11.svg" alt=""><span>Подключение и
+                                                                настройка онлайн-чата «Открытые линии»</span></li>
+                                                        <li><img src="images/icons/1_11.svg" alt=""><span>Настройка
+                                                                рассылок через CRM–маркетинг<br><span
+                                                                    class="red-alert">10 эл.адресов</span></span></li>
+                                                        <li><img src="images/icons/1_11.svg"
+                                                                alt=""><span>Онлайн-обучение по работе с CRM<br><span
+                                                                    class="red-alert">10 эл.адресов</span></span></li>
+                                                        <li><img src="images/icons/1_11.svg" alt=""><span>Написание
+                                                                регламента по работе с CRM для сотрудников</span></li>
+                                                        <li><img src="images/icons/1_11.svg" alt=""><span>Настройка
+                                                                линейных бизнес-процессов<br><span class="red-alert">10
+                                                                    эл.адресов</span></span></li>
+                                                        <li><img src="images/icons/1_11.svg" alt=""><span>Базовая
+                                                                интеграция с 1С (сделки, клиенты, счета)</span></li>
                                                     </ul>
                                                 </div>
                                                 <hr>
@@ -702,6 +772,7 @@
                 ['Так же мы поможем с принятием решения']
             ], 3000);
             $('.rounded-arrow-button').html(navButtonArrowNext);
+            $('svg#progress-bar').progressBar(75);
         });
     </script>
 </body>
