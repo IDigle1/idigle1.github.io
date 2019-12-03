@@ -51,5 +51,5 @@ jQuery.fn.progressBar = function(percent) {
   // }
 
   // transition(this, current, percentageComplete * 100);
-  this.find('text').text(`+${percentageComplete * 100}%`);
+  this.find('text').text(`+${(percentageComplete * 100).toFixed(0)}%`);
 };
