@@ -32,7 +32,6 @@ jQuery.fn.progressBar = function(percent) {
   var currentText = this.find('text').text().trim();
   
   var current = parseInt( currentText.match(/[0-9]/g).join('') );
-  console.log(current);
   var percentageComplete = percent / 100;
   var strokeDashOffsetValue = 100 - (percentageComplete * 100);
   var progressBar = this.find(" .js-progress-bar");

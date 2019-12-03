@@ -117,8 +117,6 @@ button:hover .svg-next {
 .views-item.big-banner p {
     margin-top: 35px;
     margin-bottom: 40px;
-    font-size: 18px;
-    line-height: 28px;
     color: #D4D5E8;
 
 }
@@ -280,14 +278,14 @@ button:hover .svg-next {
 .nav-tabs.costs .nav-item:first-child {
     margin-left: 0;
 } 
-.views-item.how-it-works .item {
+.views-item.how-it-works .item,
+.views-item.how-it-works .buns {
     margin-bottom: 45px;
 }
 .views-item.how-it-works .item img {
     margin-bottom: 20px;
 }
 .views-item.how-it-works .stats {
-    
     background: #F3F5F9;
 }
 .views-item.how-it-works .stats .stats-header {
@@ -311,7 +309,6 @@ button:hover .svg-next {
     color: #333;
 }
 .block-header-row  {
-
     margin-bottom: 104px;
 }
 .views-item.how-it-works .block-header-row p {
@@ -357,6 +354,7 @@ button:hover .svg-next {
     position: relative;
     background: #333991;
 }
+.views-item.what-we-do .card .rounded-arrow-button,
 .vertical-banner img {
     float: right;
 }
@@ -433,9 +431,7 @@ button:hover .svg-next {
     min-height: 96px;
     margin-bottom: 22px;
 }
-.views-item.what-we-do .card .rounded-arrow-button {
-    float: right;
-}
+
 footer {
     background: #2F3338;
     min-height: 10vh;
