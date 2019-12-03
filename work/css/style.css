@@ -173,7 +173,11 @@ button:hover .svg-next {
 }
 .views-item.we-do-work .rate-card {
     background: #fff;
-    padding: 19px 40px 30px 40px;
+    padding: 30px 40px 30px 40px;
+}
+.views-item.we-do-work .rate-card-header {
+    font-size: 25px;
+    line-height: 20px;
 }
 .blue-alert {
     color: #1D2371;
