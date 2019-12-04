@@ -147,7 +147,7 @@ button:hover .svg-next {
 }
 .icon-polygon {
     position: relative;
-    bottom: 2px;
+    bottom: 1px;
     margin-right: 9px;
 }
 .views-item.buisiness .buisiness-card img {
@@ -444,6 +444,7 @@ button:hover .svg-next {
     padding-top: 17px;
     border: 0;
     transition: 0.2s;
+    border-radius: 0;
 }
 
 .views-item.what-we-do .card:hover {
