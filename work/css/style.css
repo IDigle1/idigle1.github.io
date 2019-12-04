@@ -5,6 +5,9 @@ p {
     font-size: 18px;
     line-height: 28px;
 }
+.image {
+    width: 100%;
+}
 p.small-text,
 span.small-text  {
     font-size: 14px;
