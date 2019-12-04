@@ -261,8 +261,7 @@ button:hover .svg-next {
     
 }
 .tab-pane {
-    padding-top: 60px;
-    padding-bottom: 80px;
+    padding: 60px 0;
 }
 .tab-pane .percent-cols {
     padding-top: 83px;
@@ -348,6 +347,7 @@ button:hover .svg-next {
 .views-item .description-list {
     list-style: none;
     padding: 0;
+    margin-bottom: 0;
 }
 .views-item .description-list li {
     font-size: 16px;
