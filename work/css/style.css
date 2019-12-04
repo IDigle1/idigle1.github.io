@@ -442,6 +442,12 @@ button:hover .svg-next {
 .views-item.what-we-do .card {
     padding: 40px;
     padding-top: 17px;
+    border: 0;
+    transition: 0.2s;
+}
+
+.views-item.what-we-do .card:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
 
 .views-item.what-we-do .card h3 {
