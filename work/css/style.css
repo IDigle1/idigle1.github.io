@@ -60,6 +60,9 @@ h2 {
 .views-item.light h2 {
     color: #fff;
 }
+.presentation-banner .text {
+    color: rgba(255,255,255,0.8);
+}
 .container-fluid {
     padding: 0 50px;
     min-height: 10vh;
@@ -337,7 +340,19 @@ button:hover .svg-next {
     width: 100%;
     background: #F3F5F9;
 }
-
+.views-item.new-system .presentation-banner {
+    padding: 40px;
+    background: #484D9C;
+    color: #fff;
+}
+.views-item.new-system .presentation-banner img.left-image {
+    margin-right: 40px;
+    float: left;
+}
+.views-item.new-system .presentation-banner .header {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
 .views-item.we-do-work {
     background: #F3F5F9;
     color: #555;
