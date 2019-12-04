@@ -14,6 +14,10 @@ span.small-text  {
 .views-item.light .dim {
     color: #D4D5E8;
 }
+.big-price {
+    font-size: 40px;
+    line-height: 50px;
+}
 h2 {
     color: #333;
     font-size: 40px;
@@ -29,6 +33,9 @@ h2 {
     background: #FB6053;
     border: 0;
     border-radius: 100px;
+}
+.rounded-button.large {
+    width: 100%;
 }
 .rounded-field {
     border: 0;
@@ -61,7 +68,7 @@ h2 {
     margin-bottom: 0;
     position: relative;
     padding-top: 90px;
-    padding-bottom: 100px;
+    padding-bottom: 90px;
 }
 .maxwidththeme {
     margin-left: auto!important;
@@ -158,9 +165,14 @@ button:hover .svg-next {
 .views-item.costs .block-header-row {
     margin-bottom: 23px;
 }
+
 .views-item .nav-tabs-row {
     border-bottom: 1px solid rgba(255,255,255,0.2);
 }
+#wedoworkTabContent {
+    margin-bottom: 40px;
+}
+#wedoworkTabContent, 
 .views-item.we-do-work .nav-tabs-row {
     border-bottom: 1px solid #E4E4E4;
 }
