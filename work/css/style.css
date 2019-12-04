@@ -1,6 +1,10 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
+button,
+button:focus {
+    outline: none!important;
+}
 p {
     font-size: 18px;
     line-height: 28px;
@@ -36,6 +40,10 @@ h2 {
     background: #FB6053;
     border: 0;
     border-radius: 100px;
+    transition: 0.3s;
+}
+.rounded-button:hover {
+    background: #fd7c71;
 }
 .rounded-button.large {
     width: 100%;
