@@ -75,7 +75,7 @@ h2 {
     color: rgba(255,255,255,0.8);
 }
 .container-fluid {
-    padding: 0 50px;
+    padding: 0 25px;
     min-height: 10vh;
 }
 .views-item {
@@ -84,13 +84,78 @@ h2 {
     padding-top: 90px;
     padding-bottom: 90px;
 }
-.maxwidththeme {
+.maxwidth-theme {
     margin-left: auto!important;
     margin-right: auto!important;
-    padding: 0 16px;
+    padding: 0 23px;
     max-width: 1344px;
     position: relative;
     width: 100%;
+}
+.views-item.costs .nav-tabs-wrap {
+    border-bottom: 1px solid #5d61a8;
+    background: #333991;
+}
+.views-item.we-do-work .nav-tabs-wrap {
+    background: #F3F5F9;
+}
+.views-item.we-do-work .nav-tabs-wrap,
+#wedoworkTabContent {
+    border-bottom: 1px solid #E4E4E4;
+}
+
+@media (min-width: 1377px) {
+    
+    body.maxwidth-theme {
+        padding-left: 0!important;
+        padding-right: 0!important;
+    }
+    .container-fluid {
+        padding: 0 50px;
+    }
+}
+@media (max-width: 767px) {
+    .container-fluid {
+        padding: 0;
+    }
+    .views-item {
+        padding: 30px 0px!important;
+    }
+    .views-item.big-banner {
+        padding-bottom: 0!important;
+    }
+    .views-item.big-banner img.house {
+        width: 100%;
+    }
+    .views-item.big-banner .banner-description h2 {
+        margin-top: 0;
+        font-size: 25px!important;
+        line-height: 30px!important;
+    }
+    .views-item.big-banner p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .views-item .block-header {
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 15px;
+    }
+    .views-item .block-description-text {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    
+    .rounded-field {
+        margin: 20px 0;
+    }
+}
+.nav-tabs-wrap.fixed {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 20;
 }
 #owl-nav {
     padding: 30px 15px;
@@ -180,15 +245,11 @@ button:hover .svg-next {
     margin-bottom: 23px;
 }
 
-.views-item .nav-tabs-row {
+/* .views-item .nav-tabs-row {
     border-bottom: 1px solid rgba(255,255,255,0.2);
-}
+} */
 #wedoworkTabContent {
     margin-bottom: 40px;
-}
-#wedoworkTabContent, 
-.views-item.we-do-work .nav-tabs-row {
-    border-bottom: 1px solid #E4E4E4;
 }
 .views-item.we-do-work .rate-card-caption {
     color: #777;

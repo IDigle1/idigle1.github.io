@@ -1,54 +1,81 @@
-let $cloud = $('.cloud');
-let $cloudText = $('.cloud p');
 
-let ccloud = {
-  change: function(str, delay=400) {
-    let transition = delay / 1000 + 's';
-    $cloud.css('transition', transition);
-    $cloud.addClass('fade-up');
-    
-    setTimeout(function() {
-      $cloudText.text(str);
-      $cloud.removeClass('fade-up');
-    }, delay + delay / 10);
-  },
-  startInterval: function(arr, interval) {
-    let i = 0;
-    setInterval(function() {
-        ccloud.change(arr[i][0]);
-        i++;
-        if(i >= arr.length) i = 0;
-    },interval);
-  }
-}
-// var percentageComplete = parseInt($('svg#progress-bar').attr(
-//   'data-percent')) / 100;
-// var strokeDashOffsetValue = 100 - (percentageComplete * 100);
-// var progressBar = $("svg#progress-bar .js-progress-bar");
-// progressBar.css("stroke-dashoffset", strokeDashOffsetValue);
-// $('svg#progress-bar text').text(`+${percentageComplete * 100}%`);
 
-jQuery.fn.progressBar = function(percent) {
-  var currentText = this.find('text').text().trim();
-  
-  var current = parseInt( currentText.match(/[0-9]/g).join('') );
-  var percentageComplete = percent / 100;
-  var strokeDashOffsetValue = 100 - (percentageComplete * 100);
-  var progressBar = this.find(" .js-progress-bar");
-  progressBar.css("stroke-dashoffset", strokeDashOffsetValue);
+(function($) {
+  let $cloud = $('.cloud');
+  let $cloudText = $('.cloud p');
 
-  // function transition(ctx, from, to) {
-  //   let delay = from / 1000;
-  //   let int = from;
-  //   let interval = setInterval(function() {
-  //     if(from == to) clearInterval(interval);
-  //     if(from < to) int++;
-  //     if(from > to) int--;
+  let ccloud = {
+    change: function(str, delay=400) {
+      let transition = delay / 1000 + 's';
+      $cloud.css('transition', transition);
+      $cloud.addClass('fade-up');
       
-  //     ctx.find('text').text(`+${to}%`);
-  //   }, delay);
-  // }
+      setTimeout(function() {
+        $cloudText.text(str);
+        $cloud.removeClass('fade-up');
+      }, delay + delay / 10);
+    },
+    startInterval: function(arr, interval) {
+      let i = 0;
+      setInterval(function() {
+          ccloud.change(arr[i][0]);
+          i++;
+          if(i >= arr.length) i = 0;
+      },interval);
+    }
+  }
 
-  // transition(this, current, percentageComplete * 100);
-  this.find('text').text(`+${(percentageComplete * 100).toFixed(0)}%`);
-};
+  jQuery.fn.progressBar = function(percent) {
+    let currentText = this.find('text').text().trim(),
+        current = parseInt( currentText.match(/[0-9]/g).join('') ),
+        percentageComplete = percent / 100,
+        strokeDashOffsetValue = 100 - (percentageComplete * 100),
+        progressBar = this.find(" .js-progress-bar");
+
+    progressBar.css("stroke-dashoffset", strokeDashOffsetValue);
+    this.find('text').text(`+${(percentageComplete * 100).toFixed(0)}%`);
+  };
+
+  window.ccloud = ccloud;
+
+})($);
+
+(function($) {
+  jQuery.fn.sticky = function() {
+    let $self = this;
+
+    $self.before('<div class="sticky-anchor"></div>');
+
+    let $window     = $(window),
+        $document   = $(document),
+        $anchor     = $self.parent().find('.sticky-anchor'),
+        fixed       = false,
+        $tabContent = $self.parent().find('.tab-content');
+
+    $window.on('scroll', function() {
+      let docTop          = $document.scrollTop(),
+          anchorOffsetTop = $anchor.offset().top;
+
+      if(docTop > anchorOffsetTop && docTop < anchorOffsetTop + $tabContent.outerHeight() ) {
+        if(!fixed) {
+          $anchor.height($self.outerHeight());
+          $self.addClass('fixed');
+          fixed = true;
+        }
+        
+      } else {
+        if(fixed) {
+          $anchor.height(0);
+          $self.removeClass('fixed');
+          fixed = false;
+        }
+      }
+    });
+
+  };
+})($);
+
+$('svg#progress-bar').progressBar(85);
+$('svg#progress-bar-2').progressBar(57);
+$('.costs .nav-tabs-wrap').sticky();
+$('.we-do-work .nav-tabs-wrap').sticky();
