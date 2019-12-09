@@ -1,36 +1,44 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
+
 button,
 button:focus {
-    outline: none!important;
+    outline: none !important;
 }
+
 p {
     font-size: 18px;
     line-height: 28px;
 }
+
 .image {
     width: 100%;
 }
+
 p.small-text,
-span.small-text  {
+span.small-text {
     font-size: 14px;
     line-height: 24px;
     color: #555;
 }
+
 .views-item.light .dim {
     color: #D4D5E8;
 }
+
 .big-price {
     font-size: 40px;
     line-height: 50px;
 }
+
 h2 {
     color: #333;
     font-size: 40px;
     line-height: 50px;
 }
-.rounded-button  {
+
+.rounded-button {
     display: inline;
     padding: 12px 30px;
     font-size: 11px;
@@ -42,114 +50,93 @@ h2 {
     border-radius: 100px;
     transition: 0.3s;
 }
+
 .rounded-button:hover {
     background: #fd7c71;
 }
+
 .rounded-button.large {
     width: 100%;
 }
+
 .rounded-field {
     border: 0;
     text-transform: uppercase;
     border-radius: 100px;
-    background: rgba(255,255,255,0.5);
+    background: rgba(255, 255, 255, 0.5);
     padding: 12px 30px;
     font-size: 11px;
     line-height: 25px;
     color: #fff;
 }
-.rounded-field::-webkit-input-placeholder {color:#fff;}
-.rounded-field::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
-.rounded-field:-moz-placeholder           {color:#fff;}/* Firefox 18- */
-.rounded-field:-ms-input-placeholder      {color:#fff;}
+
+.rounded-field::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.rounded-field::-moz-placeholder {
+    color: #fff;
+}
+
+/* Firefox 19+ */
+.rounded-field:-moz-placeholder {
+    color: #fff;
+}
+
+/* Firefox 18- */
+.rounded-field:-ms-input-placeholder {
+    color: #fff;
+}
 
 .views-item.dark .block-description-text {
     color: #555;
 }
+
 .views-item.light h3,
 .views-item.light p,
 .views-item.light h2 {
     color: #fff;
 }
+
 .presentation-banner .text {
-    color: rgba(255,255,255,0.8);
+    color: rgba(255, 255, 255, 0.8);
 }
+
 .container-fluid {
     padding: 0 25px;
     min-height: 10vh;
 }
+
 .views-item {
     margin-bottom: 0;
     position: relative;
     padding-top: 90px;
     padding-bottom: 90px;
 }
+
 .maxwidth-theme {
-    margin-left: auto!important;
-    margin-right: auto!important;
+    margin-left: auto !important;
+    margin-right: auto !important;
     padding: 0 23px;
     max-width: 1344px;
     position: relative;
     width: 100%;
 }
+
 .views-item.costs .nav-tabs-wrap {
     border-bottom: 1px solid #5d61a8;
     background: #333991;
 }
+
 .views-item.we-do-work .nav-tabs-wrap {
     background: #F3F5F9;
 }
+
 .views-item.we-do-work .nav-tabs-wrap,
 #wedoworkTabContent {
     border-bottom: 1px solid #E4E4E4;
 }
 
-@media (min-width: 1377px) {
-    
-    body.maxwidth-theme {
-        padding-left: 0!important;
-        padding-right: 0!important;
-    }
-    .container-fluid {
-        padding: 0 50px;
-    }
-}
-@media (max-width: 767px) {
-    .container-fluid {
-        padding: 0;
-    }
-    .views-item {
-        padding: 30px 0px!important;
-    }
-    .views-item.big-banner {
-        padding-bottom: 0!important;
-    }
-    .views-item.big-banner img.house {
-        width: 100%;
-    }
-    .views-item.big-banner .banner-description h2 {
-        margin-top: 0;
-        font-size: 25px!important;
-        line-height: 30px!important;
-    }
-    .views-item.big-banner p {
-        font-size: 14px;
-        line-height: 24px;
-    }
-    .views-item .block-header {
-        font-size: 25px;
-        line-height: 30px;
-        margin-bottom: 15px;
-    }
-    .views-item .block-description-text {
-        font-size: 14px;
-        line-height: 24px;
-    }
-    
-    .rounded-field {
-        margin: 20px 0;
-    }
-}
 .nav-tabs-wrap.fixed {
     position: fixed;
     left: 0;
@@ -157,9 +144,11 @@ h2 {
     top: 0;
     z-index: 20;
 }
+
 #owl-nav {
     padding: 30px 15px;
 }
+
 #owl-nav button,
 .rounded-arrow-button {
     height: 38px;
@@ -169,27 +158,32 @@ h2 {
     border: 1px solid #CECECE;
     outline: none;
 }
+
 #owl-nav button svg,
 .rounded-arrow-button svg {
     position: relative;
     bottom: 1px;
 }
-#owl-nav button:hover, 
+
+#owl-nav button:hover,
 .rounded-arrow-button:hover {
     background: #FD634E;
     border-color: #FD634E;
     color: #fff;
 }
-button:hover .svg-prev, 
+
+button:hover .svg-prev,
 button:hover .svg-next {
     fill: #fff;
 }
+
 .views-item.big-banner {
     padding: 70px 30px 60px 40px;
     background: #333991;
     padding-top: 42px;
     padding-bottom: 0;
 }
+
 .views-item.big-banner h2 {
     font-size: 50px;
     line-height: 55px;
@@ -197,15 +191,18 @@ button:hover .svg-next {
     margin-top: 93px;
     margin-left: -3px;
 }
+
 .views-item.big-banner .banner-description {
     padding-left: 25px;
 }
+
 .views-item.big-banner p {
     margin-top: 35px;
     margin-bottom: 40px;
     color: #D4D5E8;
 
 }
+
 .views-item.big-banner p span {
     font-weight: 300;
 }
@@ -213,34 +210,41 @@ button:hover .svg-next {
 .views-item.big-banner .rounded-button {
     margin: 0 3px;
 }
+
 .views-item.buisiness .buisiness-card {
     padding: 70px 30px 60px 40px;
     margin: 0 15px;
     background: #F3F5F9;
 }
+
 .icon-polygon {
     position: relative;
     bottom: 1px;
     margin-right: 9px;
 }
+
 .views-item.buisiness .buisiness-card img {
     max-width: 50px;
     margin-bottom: 26px;
 }
-.views-item.buisiness .buisiness-card h3{
+
+.views-item.buisiness .buisiness-card h3 {
     font-size: 18px;
     line-height: 22px;
     margin: 10px 0;
     color: #333;
 }
+
 .views-item.buisiness .buisiness-card p {
     line-height: 25px;
     font-size: 14px;
 }
+
 .views-item.costs {
     background: #333991;
     color: #fff;
 }
+
 .views-item.costs .block-header-row {
     margin-bottom: 23px;
 }
@@ -251,35 +255,44 @@ button:hover .svg-next {
 #wedoworkTabContent {
     margin-bottom: 40px;
 }
+
 .views-item.we-do-work .rate-card-caption {
     color: #777;
     font-size: 13px;
     line-height: 20px;
 }
+
 .views-item.we-do-work .rate-card {
     background: #fff;
     padding: 39px 40px 30px 40px;
 }
+
 .views-item.we-do-work .rate-card-header {
     font-size: 25px;
     line-height: 20px;
 }
+
 .blue-alert {
     color: #1D2371;
 }
+
 .red-alert {
     color: #FC6053;
 }
+
 .views-item.we-do-work .rate-card hr {
     margin: 26px 0;
 }
+
 .views-item.we-do-work .rate-card ul {
     padding: 0;
     list-style: none;
 }
+
 .views-item.we-do-work .rate-card .rate-addition {
     min-height: 400px;
 }
+
 .views-item.we-do-work .rate-card li {
     position: relative;
     font-size: 13px;
@@ -287,6 +300,7 @@ button:hover .svg-next {
     margin-bottom: 20px;
     padding-left: 37px;
 }
+
 /* .views-item.we-do-work .rate-card li .img-wrap {
     position: absolute;
     top: 0;
@@ -296,15 +310,18 @@ button:hover .svg-next {
     float: left;
     margin-left: -37px;
 }
+
 .views-item.we-do-work .rate-card .rate-card-price {
     margin-left: 32px;
     font-size: 25px;
     line-height: 60px;
     vertical-align: middle;
 }
+
 .views-item .nav-tabs {
     border-bottom: 0;
 }
+
 .nav-tabs.costs .nav-link,
 .nav-tabs.costs .nav-link.active {
     background: none;
@@ -314,94 +331,119 @@ button:hover .svg-next {
     border-right: 0;
     padding: 10px 0;
 }
+
 .nav-tabs.costs .nav-link:hover {
-    border-color: rgba(0,0,0,0);
+    border-color: rgba(0, 0, 0, 0);
 }
+
 .views-item.costs .subscription {
     padding-top: 38px;
 }
+
 .views-item.costs .subscription img {
     margin-top: 8px;
 }
+
 .views-item.costs .subscription p {
     margin-bottom: 11px;
 }
+
 .views-item.costs .subscription .rounded-button,
 .views-item.costs .subscription .rounded-field {
     width: 100%;
 }
+
 .views-item.light .tab-content {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    
+
 }
+
 .tab-pane {
     padding: 60px 0;
 }
+
 .tab-pane .percent-cols {
     padding-top: 83px;
 }
+
 .tab-pane .percent {
     font-size: 60px;
     line-height: 50px;
     margin-bottom: 15px;
 }
+
 .nav-tabs.costs .tab-pane .small-text {
     line-height: 25px;
 }
+
 .views-item .tab-pane .tab-header {
     font-size: 22px;
     margin: 0;
     margin-bottom: 30px;
 }
+
 .nav-tabs.costs .nav-link.active,
 .nav-tabs.costs .nav-link.active:hover {
     border-bottom: 2px solid #FD634E;
 }
+
 .nav-tabs.costs .nav-item {
     margin-left: 40px;
-} 
+}
+
 .nav-tabs.costs .nav-item:first-child {
     margin-left: 0;
-} 
+}
+
 .views-item.how-it-works .item,
 .views-item.how-it-works .buns {
     margin-bottom: 45px;
 }
+
 .views-item.how-it-works .item img {
     margin-bottom: 20px;
 }
+
 .views-item.how-it-works .stats {
     background: #F3F5F9;
 }
+
 .views-item.how-it-works .stats .stats-header {
     padding: 45px 40px;
     border-bottom: 1px solid #fff;
 }
+
 .views-item.how-it-works .stats .stats-main {
     padding: 35px 40px;
     border-bottom: 1px solid #fff;
 }
+
 .views-item.how-it-works .stats .stats-footer {
     padding: 35px 40px;
 }
+
 .views-item.how-it-works .stats .stats-main p {
     margin-bottom: 0;
 }
+
 .views-item.how-it-works h3 {
     font-size: 18px;
     line-height: 22px;
     margin-bottom: 10px;
     color: #333;
 }
-.block-header-row  {
+
+.block-header-row {
     margin-bottom: 104px;
 }
+
 .views-item.how-it-works .block-header-row p {
     font-size: 18px;
     line-height: 28px;
     color: #777;
     padding-top: 5px;
 }
+
 .views-item.how-it-works p {
     font-size: 14px;
     line-height: 27px;
@@ -412,19 +454,23 @@ button:hover .svg-next {
     width: 100%;
     background: #F3F5F9;
 }
+
 .views-item.new-system .presentation-banner {
     padding: 40px;
     background: #484D9C;
     color: #fff;
 }
+
 .views-item.new-system .presentation-banner img.left-image {
     margin-right: 40px;
     float: left;
 }
+
 .views-item.new-system .presentation-banner .header {
     font-size: 18px;
     margin-bottom: 20px;
 }
+
 .views-item.we-do-work {
     background: #F3F5F9;
     color: #555;
@@ -435,31 +481,38 @@ button:hover .svg-next {
     padding: 0;
     margin-bottom: 0;
 }
+
 .views-item .description-list li {
     font-size: 16px;
     line-height: 26px;
     padding: 15px 0 15px 20px;
 }
+
 .views-item .description-list li img {
     margin-left: -20px;
 }
+
 .views-item.we-do-work .description-list li span,
 .views-item.result .description-list li span {
     vertical-align: middle;
     padding-left: 10px;
 }
+
 .vertical-banner {
     position: relative;
     background: #333991;
 }
+
 .views-item.what-we-do .card .rounded-arrow-button,
 .vertical-banner img {
     float: right;
 }
+
 .vertical-banner .cloud-wrap {
     height: 200px;
     position: relative;
 }
+
 .cloud {
     position: absolute;
     padding: 25px 28px 25px 30px;
@@ -473,10 +526,12 @@ button:hover .svg-next {
     margin: 0 60px;
     z-index: 10;
 }
+
 .cloud.fade-up {
     opacity: 0;
     bottom: 50px;
 }
+
 .cloud::after {
     content: '';
     display: block;
@@ -484,18 +539,20 @@ button:hover .svg-next {
     position: absolute;
     bottom: -10px;
     right: 0;
-    
+
     margin-right: 22%;
     transform: rotate(45deg);
     width: 30px;
     height: 30px;
     z-index: 5;
 }
+
 .cloud p {
     font-size: 17px;
     line-height: 26px;
     margin-bottom: 0;
-  }
+}
+
 .views-item.what-we-do {
     background: #F3F5F9;
     color: #555;
@@ -573,3 +630,78 @@ svg.progress-bar .progress-bar__background {
     transition: stroke-dashoffset 1s ease-in-out;
 }
 
+@media (min-width: 1377px) {
+
+    body.maxwidth-theme {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .container-fluid {
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container-fluid {
+        padding: 0;
+    }
+
+    .views-item {
+        padding: 30px 0px !important;
+    }
+
+    .views-item.big-banner {
+        padding-bottom: 0 !important;
+    }
+
+    .views-item.big-banner img.house {
+        width: 100%;
+    }
+
+    .views-item.big-banner .banner-description h2 {
+        margin-top: 0;
+        font-size: 25px !important;
+        line-height: 30px !important;
+    }
+
+    .views-item.big-banner p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .views-item .block-header {
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 15px;
+    }
+
+    .views-item .block-description-text {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .rounded-field {
+        margin: 20px 0;
+    }
+
+    .tab-pane {
+        padding: 30px 0;
+    }
+
+    .tab-pane .percent-cols {
+        padding-top: 0px;
+    }
+
+    .tab-pane .percent-cols>div {
+        margin-top: 30px;
+    }
+
+    .views-item.costs .subscription img {
+        margin-bottom: 30px;
+    }
+
+    .views-item.costs .subscription {
+        padding-top: 30px;
+    }
+}
