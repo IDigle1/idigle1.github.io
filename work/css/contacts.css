@@ -1,0 +1,42 @@
+
+.maxwidth-theme {
+    max-width: 1410px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contacts-title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 60px;
+    color: #222222;
+}
+
+.tags {
+    line-height: 2.4;
+}
+
+.tag {
+    padding: 0 8px;
+}
+
+.tag,
+.tag-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: #333333;
+}
+
+.tag img {
+    margin-right: 10px;
+}
+
+.tag-text {
+    padding-bottom: 5px;
+    border-bottom: 2px solid #feb1a7;
+}
+
