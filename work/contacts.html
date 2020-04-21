@@ -7,9 +7,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/contacts.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
 
+    
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <!-- fonts -->
@@ -18,11 +17,11 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="views-item">
+        <div class="views-item project">
             <div class="maxwidth-theme">
                 <div class="row">
                     <div class="col-md-6">
-                        <h1 class="conacts-title">Планируете проект? Давайте сделаем его вместе</h1>
+                        <h1 class="contacts-title">Планируете проект? Давайте сделаем его вместе</h1>
                         <p class="tags">В чем мы сильны: 
                             <span class="tag"><img src="images/icons/site.svg" alt=""><span class="tag-text">Сайты</span>,</span>
                             <span class="tag"><img src="images/icons/strategy.svg" alt=""><span class="tag-text">Стратегия, маркетинг и реклама</span>,</span>
@@ -31,13 +30,114 @@
                         </p>
                         <button class="rounded-button">заполнить бриф</button>
                     </div>
-                    <div class="col-md-6"></div>
+                    <div class="col-md-6">
+                        <img src="images/icons/girls.svg" alt="">
+                    </div>
+                </div>    
+            </div>
+        </div>
+
+        <div class="views-item map">
+            <div class="maxwidth-theme">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="contacts-map">
+                            <div class="block-title">
+                                <h2 class="map-title">Приходите в гости</h2>
+                                <p class="undertitle">У нас есть уютный офис, кофе, печеньки, рок энд рол и газон в переговорке :)</p>
+                            </div>
+                            
+                            <img src="images/img/map.png" alt="">
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+
+        <div class="views-item gallery">
+            <div class="maxwidth-theme">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="owl-carousel">
+                            <div class="item">
+                                <img src="images/img/citem1.png" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="images/img/citem2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+
+        <div class="views-item calls">
+            <div class="maxwidth-theme">
+                <div class="row views-item-title">
+                    <div class="col-md-7">
+                        <h2>Вам перезвонить?</h2>
+                        <p class="undertitle">Мы верим что комфортные коммуникации с клиентами способны выстроить долгосрочное и доверительное сотрудничество</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="call">
+                            <p class="call-text">Мне нужна красивая, пусть
+                                мило улыбается и говорит
+                                что все идет отлично</p>
+                            <div class="button text-center">
+                                <button class="rounded-button">перезвонить</button>
+                            </div>
+                            <div class="image">
+                                <img src="images/img/beauty.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="call">
+                            <p class="call-text">Мне нужен холоднокровный мужик способный затащить
+                                мой проект</p>
+                            <div class="button text-center">
+                                <button class="rounded-button">перезвонить</button>
+                            </div>
+                            <div class="image">
+                                <img src="images/img/strong.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="call">
+                            <p class="call-text">Мне нужна умная,
+                                пусть сыпит терминами
+                                и внушает спокойствие</p>
+                            <div class="button text-center">
+                                <button class="rounded-button">перезвонить</button>
+                            </div>
+                            <div class="image">
+                                <img src="images/img/smart.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>    
             </div>
         </div>
     </div>
     
     <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(".owl-carousel").owlCarousel({
+            autoplay: true,
+            autoplayTimeout: 4000,
+            smartSpeed: 1000,
+            dots: false,
+            nav: false,
+            margin: 30,
+            items: 2,
+            loop: false
+        });
+    </script>
 </body>
 </html>
