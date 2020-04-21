@@ -54,6 +54,14 @@ button {
     border-bottom: 2px solid #feb1a7;
 }
 
+.tag:hover {
+    text-decoration: none;
+}
+
+.tag:hover .tag-text {
+    border-bottom: 2px solid #FD634E;
+}
+
 h2 {
     font-style: normal;
     font-weight: 800;
