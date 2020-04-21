@@ -67,8 +67,9 @@ h2 {
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 30px;
     color: #333333;
+    margin: 0;
 }
 /* 
 .views-item.project {
