@@ -23,6 +23,7 @@ img {
 }
 
 button {
+    letter-spacing: 0.03em;
     font-weight: bold;
 }
 
@@ -35,17 +36,17 @@ button {
     margin-bottom: 25px;
 }
 
-.tags {
+.views-item.project .tags {
     line-height: 2.5;
     margin-bottom: 40px;
 }
 
-.tag {
+.views-item.project .tag {
     padding: 0 8px;
 }
 
-.tag,
-.tag-text {
+.views-item.project .tag,
+.views-item.project .tag-text {
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -53,20 +54,20 @@ button {
     color: #333333;
 }
 
-.tag img {
+.views-item.project .tag img {
     margin-right: 10px;
 }
 
-.tag-text {
+.views-item.project .tag-text {
     padding-bottom: 5px;
     border-bottom: 2px solid #feb1a7;
 }
 
-.tag:hover {
+.views-item.project  .tag:hover {
     text-decoration: none;
 }
 
-.tag:hover .tag-text {
+.views-item.project .tag:hover .tag-text {
     border-bottom: 2px solid #FD634E;
 }
 
@@ -96,9 +97,12 @@ h2 {
     margin-bottom: 30px;
 }
 
-.views-item-title,
-.contacts-map .block-title {
+.views-item-title {
     padding: 80px 0;
+}
+
+.contacts-map img {
+    width: 100%;
 }
 
 .views-item.gallery {
@@ -118,6 +122,12 @@ h2 {
     padding: 40px;
 }
 
+
+.views-item.calls .call img {
+    display: block;
+    margin: auto;
+}
+
 .views-item.calls .call-text {
     font-style: normal;
     font-weight: 800;
@@ -134,4 +144,55 @@ h2 {
 
 .views-item.calls .call .image {
     margin-bottom: -40px;
+}
+
+@media (max-width: 767px) {
+    .views-item {
+        padding: 0px;
+    }
+
+    .views-item-title {
+        padding: 40px 0;
+    }
+
+    .views-item.map {
+        margin-bottom: 15px;
+    }
+
+    .views-item.calls .call {
+        margin-bottom: 20px;
+    }
+
+    .contacts-title {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .views-item-title h2 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .views-item.project .tags,
+    .views-item.project .tags .tag-text {
+        font-size: 15px;
+    }
+
+    .undertitle {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .views-item.project .project-image .img-wrap,
+    .views-item.project .project-tags {
+        padding-bottom: 40px;
+    }
+
+    .views-item.project .project-image .img-wrap {
+        border-bottom: 1px solid #EEEFF6;
+    }
+
+    .views-item.project .tag-text {
+        padding-bottom: 2px;
+    }
 }

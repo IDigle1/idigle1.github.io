@@ -20,8 +20,13 @@
         <div class="views-item project">
             <div class="maxwidth-theme">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-12">
                         <h1 class="contacts-title">Планируете проект? Давайте сделаем его вместе</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-6 project-tags">
+                        
                         <p class="tags">В чем мы сильны: 
                             <a href="" class="tag"><img src="images/icons/site.svg" alt=""><span class="tag-text">Сайты</span>,</a>
                             <a href="" class="tag"><img src="images/icons/strategy.svg" alt=""><span class="tag-text">Стратегия, маркетинг и реклама</span>,</a>
@@ -30,8 +35,10 @@
                         </p>
                         <button class="rounded-button">заполнить бриф</button>
                     </div>
-                    <div class="col-md-6">
-                        <img src="images/icons/girls.svg" alt="">
+                    <div class="col-12 col-lg-6 project-image">
+                        <div class="img-wrap">
+                            <img src="images/icons/girls.svg" alt="">
+                        </div>
                     </div>
                 </div>    
             </div>
@@ -39,15 +46,17 @@
 
         <div class="views-item map">
             <div class="maxwidth-theme">
+                <div class="row views-item-title">
+                    <div class="col-md-7">
+                        <h2 class="map-title">Приходите в гости</h2>
+                        <p class="undertitle">У нас есть уютный офис, кофе, печеньки, рок энд рол и газон в переговорке :)</p>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="contacts-map">
-                            <div class="block-title">
-                                <h2 class="map-title">Приходите в гости</h2>
-                                <p class="undertitle">У нас есть уютный офис, кофе, печеньки, рок энд рол и газон в переговорке :)</p>
-                            </div>
-                            
-                            <img src="images/img/map.png" alt="">
+                            <img src="images/img/map.png" class="d-none d-lg-block" alt="">
+                            <img src="images/img/map-mini.png" class="d-block d-lg-none" alt="">
                         </div>
                     </div>
                 </div>    
@@ -142,7 +151,16 @@
             nav: false,
             margin: 30,
             items: 2,
-            loop: true
+            loop: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    margin: 15
+                },
+                768: {
+                    items: 2
+                }
+            }
         });
     </script>
 </body>

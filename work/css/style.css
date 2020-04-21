@@ -648,7 +648,7 @@ svg.progress-bar .progress-bar__background {
     }
 
     .views-item {
-        padding: 30px 0px !important;
+        padding: 30px 0px;
     }
 
     .views-item.big-banner {
