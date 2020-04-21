@@ -120,8 +120,8 @@ h2 {
 .views-item.calls .call {
     background: #EEEFF6;
     padding: 40px;
+    height: 100%;
 }
-
 
 .views-item.calls .call img {
     display: block;
@@ -164,8 +164,8 @@ h2 {
     }
 
     .contacts-title {
-        font-size: 25px;
-        line-height: 30px;
+        font-size: 30px;
+        line-height: 35px;
     }
 
     .views-item-title h2 {
@@ -188,6 +188,11 @@ h2 {
         padding-bottom: 40px;
     }
 
+    .views-item.project .tag {
+        display: block;
+        padding: 0;
+    }
+
     .views-item.project .project-image .img-wrap {
         border-bottom: 1px solid #EEEFF6;
     }
@@ -195,4 +200,6 @@ h2 {
     .views-item.project .tag-text {
         padding-bottom: 2px;
     }
+
+    
 }
