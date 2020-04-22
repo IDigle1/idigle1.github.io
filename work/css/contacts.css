@@ -119,7 +119,9 @@ h2 {
 
 .views-item.calls .call {
     background: #EEEFF6;
-    padding: 40px;
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-right: 40px;
 }
 
 .views-item.calls .call img {
@@ -141,25 +143,13 @@ h2 {
     margin-bottom: 30px;
 }
 
-.views-item.calls .call .image {
-    margin-bottom: -40px;
-}
-
 @media (max-width: 767px) {
     .views-item {
         padding: 0px;
     }
 
-    .views-item-title {
-        padding: 40px 0;
-    }
-
     .views-item.map {
         margin-bottom: 15px;
-    }
-
-    .views-item.calls .call {
-        margin-bottom: 20px;
     }
 
     .contacts-title {
@@ -182,11 +172,6 @@ h2 {
         line-height: 25px;
     }
 
-    .views-item.project .project-image .img-wrap,
-    .views-item.project .project-tags {
-        padding-bottom: 40px;
-    }
-
     .views-item.project .tag {
         display: block;
         padding: 0;
@@ -199,6 +184,26 @@ h2 {
     .views-item.project .tag-text {
         padding-bottom: 2px;
     }
+}
 
+@media (max-width: 991px) {
+    .views-item.calls .call {
+        margin-bottom: 20px;
+    }
     
+    .views-item-title {
+        padding: 40px 0;
+    }
+    
+    .views-item.project .project-image .img-wrap,
+    .views-item.project .project-tags {
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .views-item.calls .call-text {
+        margin-top: 67px;
+        text-align: left;
+    }
 }
