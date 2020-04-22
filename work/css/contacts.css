@@ -28,6 +28,27 @@ button {
     font-weight: bold;
 }
 
+.rounded-button {
+    display: inline;
+    padding: 12px 30px;
+    font-size: 11px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #fff;
+    background: #FB6053;
+    border: 0;
+    border-radius: 100px;
+    transition: 0.3s;
+}
+
+.rounded-button:hover {
+    background: #fd7c71;
+}
+
+.rounded-button.large {
+    width: 100%;
+}
+
 .contacts-title {
     font-style: normal;
     font-weight: 800;
