@@ -43,6 +43,7 @@ button {
 
 .views-item.project .tag {
     padding: 0 8px;
+    display: inline-block;
 }
 
 .views-item.project .tag,
