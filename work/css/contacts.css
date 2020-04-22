@@ -195,7 +195,6 @@ h2 {
         padding: 40px 0;
     }
     
-    .views-item.project .project-image .img-wrap,
     .views-item.project .project-tags {
         padding-bottom: 40px;
     }
@@ -203,7 +202,11 @@ h2 {
 
 @media (max-width: 991px) and (min-width: 768px) {
     .views-item.calls .call-text {
-        margin-top: 67px;
         text-align: left;
+    }
+    .views-item.calls .call-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
 }
