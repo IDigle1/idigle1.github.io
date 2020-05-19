@@ -1,25 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Цифровое бессмертие</title>
     <style>
         body {
+            font-family: sans-serif;
             padding: 0;
             margin: 0;
         }
+        header {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            padding: 10px;
+            border-bottom: 2px solid #0984e3;
+        }
+        h1 {
+            color: #0984e3;
+            font-size: 20px;
+        }
         .content {
+            position: relative;
             height: 50vh;
             margin: 25vh auto;
             width: 600px;
-            border: 1px solid #999;
+        }
+        .dialog {
+            padding: 15px;
+            box-sizing: border-box;
+            border: 2px solid #0984e3;
+            border-radius: 5px;
+            width: 100%;
+            height: 80%;
+        }
+        .inputs {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 20%;
+        }
+        .say {
+            box-sizing: border-box;
+            outline: none;
+            border: 2px solid #0984e3;
+            padding: 10px 5px;
+            border-radius: 5px;
+            margin-right: 1%;
+            width: 70%;
+        }
+        .submit {
+            width: 29%;
+            outline: none;
+            background: #0984e3;
+            border: 2px solid #0984e3;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 5px;
+        }
+        .message {
+            border-radius: 5px;
+            margin-top: 0;
+            margin-bottom: 5px;
+            padding: 5px;
+            border: 2px solid #0984e3;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>IMMORTALITY - цифровое бессмертие в твоем браузере</h1>
+    </header>
     <div class="content">
-        <input class="say" type="text"><input class="submit" type="button" value="Отправить">
+        <div class="dialog">
+
+        </div>
+        <div class="inputs">
+            <input class="say" type="text"><input class="submit" type="button" value="Отправить">
+        </div>
     </div>
 
     <script>
@@ -32,18 +93,24 @@
         }
         
         let submit = document.querySelector('.submit');
+        let dialog = document.querySelector('.dialog');
 
         submit.addEventListener('click', function() {
             let say = document.querySelector('.say');
+            let message = document.createElement('p');
 
+            message.classList.add('message');
+            
             if(brain[say.value]) {
-                alert(brain[say.value]);
+                message.innerText = brain[say.value];
+                
             } else {
                 let answer = prompt('как мне ответить на это в следующий раз?');
                 brain[say.value] = answer;
                 localStorage.setItem('brain', JSON.stringify(brain));
             }
-            
+
+            dialog.appendChild(message);
         });
 
     </script>
