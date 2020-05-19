@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        .content {
+            height: 50vh;
+            margin: 25vh auto;
+            width: 600px;
+            border: 1px solid #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <input class="say" type="text"><input class="submit" type="button" value="Отправить">
+    </div>
+
+    <script>
+        let brain;
+
+        if ( localStorage.getItem('brain') ) {
+            brain = JSON.parse(localStorage.getItem('brain'));
+        } else {
+            brain = {};
+        }
+        
+        let submit = document.querySelector('.submit');
+
+        submit.addEventListener('click', function() {
+            let say = document.querySelector('.say');
+
+            if(brain[say.value]) {
+                alert(brain[say.value]);
+            } else {
+                let answer = prompt('как мне ответить на это в следующий раз?');
+                brain[say.value] = answer;
+                localStorage.setItem('brain', JSON.stringify(brain));
+            }
+            
+        });
+
+    </script>
+</body>
+</html>
