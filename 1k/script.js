@@ -55,7 +55,7 @@ let game = {
                 attributes: null
             });
 
-            $(playerElement).append('<button" class="close-button" data-id="'+index+'" onclick="game.deletePlayer()"><i class="close-icon"></i></button>');
+            $(playerElement).append('<button" class="close-button" data-id="'+index+'" onclick="game.deletePlayer(this)"><i class="close-icon"></i></button>');
             console.log($(playerElement))
             playerElement.appendChild(createElement({
                 tagName: 'h2',
@@ -141,11 +141,10 @@ let game = {
             game.changeScores(index, value);
         });
     },
-    deletePlayer() {
-            let $this = $(this);
+    deletePlayer(target) {
+            let $this = $(target);
             let id = $this.data('id');
             
-            console.log($this)
             game.players.splice(id, 1);
             game.updateSession();
     },
