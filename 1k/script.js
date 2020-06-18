@@ -48,87 +48,23 @@ let game = {
         $('.players').html('');
 
         for([index, player] of this.players.entries()) {
-            let playerElement = createElement({
-                tagName: 'div',
-                id: 'player-' + index,
-                className: 'player',
-                attributes: null
-            });
-
-            $(playerElement).append('<button" class="close-button" data-id="'+index+'" onclick="game.deletePlayer(this)"><i class="close-icon"></i></button>');
-            console.log($(playerElement))
-            playerElement.appendChild(createElement({
-                tagName: 'h2',
-                className: 'player-name',
-                text: player.name,
-                attributes: null
-            }));
-
-            let displayScores = createElement({
-                tagName: 'div',
-                className: 'display-scores',
-                text: null,
-                attributes: null
-            });
-
-            playerElement.appendChild(displayScores);
-
-            displayScores.appendChild(createElement({
-                tagName: 'span',
-                className: 'scores',
-                text: player.scores,
-                attributes: null
-            }));
-
-            displayScores.appendChild(createElement({
-                tagName: 'span',
-                className: 'last-action',
-                text: player.lastAction,
-                attributes: null
-            }));
-
-            displayScores.appendChild(createElement({
-                tagName: 'span',
-                className: 'misses',
-                text: player.misses,
-                attributes: null
-            }));
-
-            let inputGroup = createElement({
-                tagName: 'div',
-                className: 'input-group',
-                text: null,
-                attributes: null
-            });
-
-            playerElement.appendChild(inputGroup);
-
-            inputGroup.appendChild(createElement({
-                tagName: 'input',
-                className: null,
-                text: null,
-                attributes: [
-                    {name: 'type', value: 'text'},
-                    {name: 'data-id', value: index}
-                ]
-            }));
-
-            inputGroup.appendChild(createElement({
-                tagName: 'button',
-                className: 'change-account',
-                text: 'Изменить',
-                attributes: [
-                    {name: 'data-id', value: index}
-                ]
-            }));
-
-            
-
-            $('.players').append(playerElement);
-
-            this.loadEventListeners();
+            $('.players').append(`
+                <div class="player" id="player-${index}">
+                    <button class="close-button" data-id=${index}><i class="close-icon"></i></button>
+                    <h2 class="player-name">${player.name}</h2>
+                    <div class="display-scores">
+                        <span class="scores">${player.scores}</span>
+                        <span class="last-action">${player.lastAction}</span>
+                        <span class="misses">${player.misses}</span>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" data-id="${index}">
+                        <button class="change-account" data-id="${index}">Изменить</button>
+                    </div>
+                </div>
+            `);
         }
-
+        this.loadEventListeners();
         this.saveData();
     },
     loadEventListeners() {
@@ -140,13 +76,16 @@ let game = {
 
             game.changeScores(index, value);
         });
+
+        $('.close-button').click(function() {
+            let id = $(this).data('id');
+
+            game.deletePlayer(id);
+        });
     },
-    deletePlayer(target) {
-            let $this = $(target);
-            let id = $this.data('id');
-            
-            game.players.splice(id, 1);
-            game.updateSession();
+    deletePlayer(id) {
+        game.players.splice(id, 1);
+        game.updateSession();
     },
     saveData() {
         localStorage.setItem('players', JSON.stringify(this.players));
@@ -162,44 +101,6 @@ let game = {
 
     }
 };
-    
-function createElement(arElement) {
-    let element = document.createElement(arElement.tagName);
-
-    if(arElement.className != null) {
-        if(Array.isArray(arElement.className)) {
-            for(className of arElement.className) {
-                element.classList.add(className);
-            }
-        } else if(typeof arElement.className == 'string') {
-            element.classList.add(arElement.className);
-        } else {
-            return false;
-        }
-        
-    }
-
-    if(arElement.attributes != null) {
-        if(Array.isArray(arElement.attributes)) {
-            for(attribute of arElement.attributes) {
-                element.setAttribute(attribute.name, attribute.value)
-            }
-        } else {
-            return false;
-        }
-    }
-
-    if(arElement.text != null) {
-        element.innerText = arElement.text;
-    }
-
-    if(arElement.id != null) {
-        element.id = arElement.id;
-    }
-
-    return element;
-}
-
 
 game.loadData();
 game.updateSession();

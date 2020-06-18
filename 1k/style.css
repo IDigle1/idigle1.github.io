@@ -1,9 +1,10 @@
 body {
+    color: #333;
     padding: 0;
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
-    background: linear-gradient(90deg, #f8f8f8 21px, transparent 1%) center, linear-gradient(#f6f6f6 21px, transparent 1%) center, #000000;
-background-size: 22px 22px;
+    background: #ebebeb;
+    background-size: 22px 22px;
 }
 .container {
     padding: 5px;
@@ -19,7 +20,7 @@ background-size: 22px 22px;
     color: #fff;
     display: block;
     padding: 5px;
-    background: #e74c3c;
+    background: #FF7052;
     text-decoration: none;
     position: absolute;
     bottom: 10px;
@@ -32,11 +33,9 @@ background-size: 22px 22px;
 }
 .player {
     position: relative;
-    border-radius: 3px;
     background: #fff;
     box-sizing: border-box;
     padding: 10px;
-    border: 1px solid #d9d9d9;
     margin: 5px 0;
 }
 .player .player-name {
@@ -47,13 +46,17 @@ background-size: 22px 22px;
     display: flex;
 }
 .input-group input[type=text] {
+    margin-right: 5px;
+    outline: none;
+    border-radius: 0;
+    border: 1px solid #dbdbdb;
     flex-grow: 1;
 }
 .change-account {
     padding: 5px 10px;
     border: 0;
     color: #fff;
-    background: #e74c3c;
+    background: #FF7052;
 }
 .display-scores {
     margin-bottom: 10px;
@@ -62,10 +65,18 @@ background-size: 22px 22px;
     margin-right: 10px;
 }
 .close-button {
+    background: none;
+    border: 0;
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    top: 0;
+    width: 20px;
+    padding: 0;
+    height: 20px;
     cursor: pointer;
-    right: 10px;
-    top: 10px;
 }
 i.close-icon {
     transform: rotate(45deg);
