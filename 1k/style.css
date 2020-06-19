@@ -40,7 +40,7 @@ body {
 }
 .player .player-name {
     line-height: 18px;
-    margin: 10px 0;
+    margin: 10px 0 20px;
 }
 .input-group {
     display: flex;
