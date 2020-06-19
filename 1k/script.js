@@ -58,7 +58,7 @@ let game = {
                         <span class="misses">${player.misses}</span>
                     </div>
                     <div class="input-group">
-                        <input type="text" data-id="${index}">
+                        <input type="text" data-id="${index}" placeholder="Введите очки">
                         <button class="change-account" data-id="${index}">Изменить</button>
                     </div>
                 </div>
