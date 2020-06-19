@@ -46,6 +46,7 @@ body {
     display: flex;
 }
 .input-group input[type=text] {
+    padding-left: 10px;
     margin-right: 5px;
     outline: none;
     border-radius: 0;
