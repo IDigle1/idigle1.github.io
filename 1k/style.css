@@ -49,8 +49,9 @@ body {
     margin-right: 5px;
     outline: none;
     border-radius: 0;
-    border: 1px solid #dbdbdb;
     flex-grow: 1;
+    border: 1px solid #d7d7d7;
+    background: #f3f3f3;
 }
 .change-account {
     padding: 5px 10px;
@@ -59,10 +60,18 @@ body {
     background: #FF7052;
 }
 .display-scores {
+    display: flex;
     margin-bottom: 10px;
+    margin-right: -10px;
+    margin-left: -10px;
 }
 .display-scores span {
-    margin-right: 10px;
+    color: #808080;
+    margin: 0 10px;
+    flex-grow: 1;
+    text-align: center;
+    border: 1px solid #d7d7d7;
+    background: #f3f3f3;
 }
 .close-button {
     background: none;
