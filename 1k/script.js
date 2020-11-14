@@ -45,7 +45,7 @@ let game = {
         
     },
     updateSession() {
-        $('.players').html('');
+        $('.player').remove();
 
         for([index, player] of this.players.entries()) {
             $('.players').append(`
