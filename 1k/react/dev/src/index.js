@@ -2,38 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
 import AddPlayerButton from './AddPlayerButton';
-import Player from './Player';
-
-class PlayersList extends React.Component {
-  render() {
-    let players = this.props.players.map((player) => {
-      return (
-        <Player 
-          name={player.name} 
-          scores={player.scores} 
-          misses={player.misses} 
-          lastAction={player.lastAction}  
-          handlerRemovePlayer={this.props.handlerRemovePlayer}
-          handlerChangeAccount={this.props.handlerChangeAccount}
-        />
-      );
-    });
-
-    return (
-      <div className="player-list">
-        {players}
-      </div>
-    );
-  }
-}
+import PlayersList from './PlayersList';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      players: [
-        {name: 'name', scores: '0', misses: '0', lastAction: '0'}
-      ]
+      players: []
     };
 
     this.handlerAddPlayer = this.handlerAddPlayer.bind(this);
@@ -41,8 +16,22 @@ class App extends React.Component {
     this.handlerChangeAccount = this.handlerChangeAccount.bind(this);
   }
 
+  componentDidMount() {
+    if (!localStorage.getItem('players')) {
+      localStorage.setItem('players', '[]');
+    }
+
+    this.setState({
+      players: JSON.parse(localStorage.getItem('players'))
+    })
+  }
+
+  componentDidUpdate() {
+    localStorage.setItem('players', JSON.stringify(this.state.players))
+  }
+
   handlerAddPlayer(e) {
-    e.preventDefalut();
+    e.preventDefault();
 
     let newPlayerName = prompt('Введите имя');
 
