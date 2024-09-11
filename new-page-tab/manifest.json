@@ -1,30 +1,10 @@
 {
-  "name": "New tab page",
-  "description": "Overrides the new tab page",
-  "version": "0.1",
-  "incognito": "split",
-  "minimum_chrome_version": "116",
-  "chrome_url_overrides": {
-    "newtab": "index.html"
-  },
-  "content_security_policy": {
-    "extension_pages": "default-src 'none'; script-src 'self'; style-src 'self'; object-src 'self'; base-uri 'none';"
-  },
-  "permissions": [
-    "bookmarks",
-    "favicon",
-    "history",
-    "sessions",
-    "storage",
-    "tabs", 
-    "topSites"
-  ],
-  "host_permissions": ["*://*/*"],
-  "options_ui": {
-    "page": "index.html",
-    "open_in_tab": true
-  },
-  "cross_origin_embedder_policy": { "value": "require-corp" },
-  "cross_origin_opener_policy": { "value": "same-origin" },
-  "manifest_version": 3
+    "name": "New tab page",
+    "description": "Overrides the new tab page",
+    "version": "0.1",
+    "incognito": "split",
+    "chrome_url_overrides": {
+      "newtab": "index.html"
+    },
+    "manifest_version": 3
 }
